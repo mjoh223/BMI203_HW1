@@ -1,5 +1,5 @@
 import numpy as np
-from example import algs
+from sort_functions import algs
 
 def test_pointless_sort():
     # generate random vector of length 10

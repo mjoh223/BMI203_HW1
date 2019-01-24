@@ -17,8 +17,9 @@ def bubblesort(x):
                 x[i], x[i+1] = x[i+1], x[i] #two assignment
     return x
 
-def quickSort(x):
+def quicksort(x):
     quickSortHelper(x,0,len(x)-1)
+    return x
 
 def quickSortHelper(x, first, last):
     if first < last:
@@ -54,7 +55,3 @@ def partition(x, first, last):
     x[first] = x[rightmark]
     x[rightmark] = temp
     return rightmark
-
-alist = [54,26,93,17,77,31,44,55,20]
-quickSort(alist)
-print(alist)
