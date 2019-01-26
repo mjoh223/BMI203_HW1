@@ -1,6 +1,11 @@
 import numpy as np
 import timeit
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
 def pointless_sort(x):
     """
     This function always returns the same values to show how testing
@@ -91,11 +96,6 @@ for i in [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]:
     lt, c, a = quicksort(np.random.randint(i, size=i))
     timed.append([i,"quicksort", timq, i*np.log2(i), c, a])
 
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from scipy import stats
 timed = pd.DataFrame(timed)
 timed.columns = ["n", "algorithm", "time", "expected", "conditionals", "assignments"]
 sns.lmplot(x="n", y="time", col="algorithm",fit_reg=False,data=timed, ci=False)

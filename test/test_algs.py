@@ -2,6 +2,12 @@ import numpy as np
 from sort_functions import algs
 import timeit
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy import stats
+
 def test_pointless_sort():
     # generate random vector of length 10
     x = np.random.rand(10)
