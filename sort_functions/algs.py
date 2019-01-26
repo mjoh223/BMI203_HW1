@@ -1,4 +1,5 @@
 import numpy as np
+import timeit
 
 def pointless_sort(x):
     """
@@ -76,7 +77,6 @@ def wrapper(func, *args, **kwargs):
     def wrapped():
         return func(*args, **kwargs)
     return wrapped
-
 timed = []
 for i in [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]:
     x = np.random.randint(i, size=i)

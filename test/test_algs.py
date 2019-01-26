@@ -1,5 +1,6 @@
 import numpy as np
 from sort_functions import algs
+import timeit
 
 def test_pointless_sort():
     # generate random vector of length 10
