@@ -33,10 +33,10 @@ def test_bubblesort():
 
     # for now, just attempt to call the bubblesort function, should
     # actually check output
-    assert np.array_equal(algs.bubblesort(x), [0, 1, 1, 2, 4])
-    assert np.array_equal(algs.bubblesort(empty_array), [])
-    assert np.array_equal(algs.bubblesort(single_element_vector), [1])
-    assert np.array_equal(algs.bubblesort(duplicated_elements), [0,1,1,1,1,1,1,1,2,4])
+    assert np.array_equal(algs.bubblesort(x)[0], [0, 1, 1, 2, 4])
+    assert np.array_equal(algs.bubblesort(empty_array)[0], [])
+    assert np.array_equal(algs.bubblesort(single_element_vector)[0], [1])
+    assert np.array_equal(algs.bubblesort(duplicated_elements)[0], [0,1,1,1,1,1,1,1,2,4])
 def test_quicksort():
 
     x = np.array([1,2,4,0,1])
@@ -46,7 +46,7 @@ def test_quicksort():
 
     # for now, just attempt to call the quicksort function, should
     # actually check output
-    assert np.array_equal(algs.quicksort(x), [0, 1, 1, 2, 4])
-    assert np.array_equal(algs.quicksort(empty_array), [])
-    assert np.array_equal(algs.quicksort(single_element_vector), [1])
-    assert np.array_equal(algs.quicksort(duplicated_elements), [0,1,1,1,1,1,1,1,2,4])
+    assert np.array_equal(algs.quicksort(x)[0], [0, 1, 1, 2, 4])
+    assert np.array_equal(algs.quicksort(empty_array)[0], [])
+    assert np.array_equal(algs.quicksort(single_element_vector)[0], [1])
+    assert np.array_equal(algs.quicksort(duplicated_elements)[0], [0,1,1,1,1,1,1,1,2,4])
